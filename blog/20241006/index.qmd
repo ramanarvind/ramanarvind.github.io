@@ -1,0 +1,36 @@
+---
+title: "Remotely connecting to your home Linux laptop: Part-1"
+draft: true
+date: 2024-03-21
+description: "" 
+image: "./lehman-brothers.jpg"
+twitter-card:
+  image: "./lehman-brothers.jpg"
+open-graph:
+  image: "./lehman-brothers.jpg"
+categories:
+  - AWS
+  - Networking
+---
+
+# Introduction : 
+I run an application on my personal Lubuntu Linux laptop and at times have the need to access it remotely. The fact that I installed Lubuntu on the laptop explains that it is a low end laptop and hence this solution should work on most machines. 
+
+This multi-part article explains how I enabled remote access on my Linux laptop. 
+* Part-1 (this article) explains how I enabled SSH access from my work laptop to my home laptop 
+* Part-2 explains how I enabled VNC access from my work laptop to my home laptop 
+* Part-3 explains how I automated the whole workflow
+
+To set the context, I explain the network topology and what I wanted to achieve below
+* My laptop sits behind a router and hence is only visible in the private home network.
+* My router is assigned a dynamic public IP address and to keep the solution cost low, I didn't explore getting a static public IP address
+* I wanted to access my home Linux box via VNC from any other laptop (Windows / Linux). I was keen on using VNC. Specifically, I wanted to avoid using any proprietary or any other freeware software since VNC was pre-installed on my work laptop. Installing additional software on my work laptop would require seeking approvals and I didn't want to do that. 
+* Since the need to access my home laptop was limited and sporadic, I didn't want to subscribe to a paid service and specifically didn't want to consider any solution that required installing anything other than a VNC and a ssh client on the laptop from where the remote access would be made.
+
+# Baby step #1:
+Since my Linux laptop was behind a router I knew accessing it from outside the home network would require punching a hole through the router's NAT, similar to how WebRTC connections are established. While my eventual goal was to access my home laptop using VNC, I decided to first try reaching it over ssh. I decided to give Reverse SSH tunneling a try.
+
+## What is Reverse SSH tunneling
+Reverse SSH as the name suggests works in the reverse direction. Instead of directly connecting to the home laptop, the home laptop first establishes an ssh connection to a machine that's publically accessible, lets say an Amazon EC2 instance. Reverse SSH uses this established connection to a setup a new connection from the Amazon EC2 instance back to the home laptop. And since SSH is secure, we are we are putting a secure connection (from the Amazon EC2 instance to the home laptop) inside of another secure connection (from the home laptop to the Amazon EC2 instance). The Reverse SSH connection therefore acts as a tunnel inside the original connection that was established from the home laptop the EC2 instance. 
+
+With the Reverse SSH tunnel working between the Amazon EC2 instance and the home laptop it should be possible to ssh to the Amazon instance in a way that it actually results in a ssh into the home laptop. Lets 

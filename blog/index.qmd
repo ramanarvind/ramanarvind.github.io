@@ -1,0 +1,17 @@
+---
+title: "Blog"
+listing: 
+  contents: 
+    - "*.qmd"
+  type: grid
+  table-striped: true
+  table-hover: true
+  sort:
+    - "date desc"
+  date-format: medium
+  image-height: "480"  
+  categories: true
+  sort-ui: [date, categories]
+  filter-ui: true
+  feed: true
+---

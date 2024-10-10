@@ -1,0 +1,159 @@
+---
+title: "Arvind Raman"
+image: /assets/profile/arvind.jpg
+about:
+    id: hero-heading
+    template: solana
+    image-shape: rounded
+    links:
+        - icon: github
+          text: Github
+          href: https://github.com/ramanarvind
+        - icon: linkedin
+          text: LinkedIn
+          href: https://linkedin.com/ramanarvind
+        - icon: share
+          text: Share
+          href: ramanarvind.github.io
+format:
+    html:
+        page-layout: full
+lightbox: auto
+---
+#####
+:::{#hero-heading}
+Welcome to my blog, where I write about technology, innovation, and leadership. I am an experienced engineering leader and have have had the opportunity to work on a range of technologies including Cloud Computing, Kubernetes, Machine Learning, CPaaS, Multimedia Streaming, Ad Tech and DevSecOps. 
+
+In this blog, I intend to share my insights, learnings and emerging trends on the various technical topics I have experience with. This will help journal my learnings and potentially spark conversations that can help us all grow in this rapidly changing field.
+:::
+
+## Certfications
+
+::: {layout-ncol="2"}
+::::: {.card .card-body}
+::::::::: {.card-text}
+[![](/assets/profile/Coursera_8V3XW2KW59GJ.jpg "Title: "Natural Language Processing Specialization""){group="certifications"}](https://www.coursera.org/account/accomplishments/specialization/8V3XW2KW59GJ){.external target="_blank"}
+:::::::::
+::::::: {.card-title .h5}
+Natural Language Processing Specialization Coursera Certification
+:::::::
+:::::
+
+::::: {.card .card-body}
+::::::::: {.card-text}
+[![](/assets/profile/AWSSolutionArchitect.jpg "Title: "AWS Solution Architects Certification""){group="certifications"}](https://cp.certmetrics.com/amazon/en/public/verify/credential/03255bb779b3469ea665a20bf5a081e5){.external target="_blank"}
+:::::::::
+::::::: {.card-title .h5}
+AWS Solutions Architect Certification
+:::::::
+:::::
+
+::::: {.card .card-body}
+::::::::: {.card-text}
+[![](/assets/profile/Coursera_CSXLXBPZGENY.jpg "Title: "Algorithmic Toobox""){group="certifications"}](https://www.coursera.org/account/accomplishments/verify/CSXLXBPZGENY){.external target="_blank"}
+:::::::::
+::::::: {.card-title .h5}
+Algorithmic Toobox Coursera Certification
+:::::::
+:::::
+:::
+
+## Patent Awards 
+
+::: {layout-ncol="2"}
+::::: {.card .card-body}
+::::::: {.card-title .h5}
+| [Technique for transcoding MPEG-2/MPEG-4 bitstream to H.264 bitstream](https://ppubs.uspto.gov/dirsearch-public/print/downloadBasicPdf/8428118?requestToken=eyJzdWIiOiI4ZmYyZGExYS1lM2VjLTQ3NDMtOTkyYS05ZThlMjBmMTVlNWEiLCJ2ZXIiOiIyOGU3ZTFlMS1hNGFlLTQ1OGItODNhOS03YTU2N2NiYzFhMTkiLCJleHAiOjB9){.external target="_blank"}
+:::::::
+| US 84,428,118
+| Issued 23-Apr-2013
+:::::
+
+::::: {.card .card-body}
+::::::: {.card-title .h5}
+| [Fast motion-estimation scheme](https://ppubs.uspto.gov/dirsearch-public/print/downloadBasicPdf/7782951?requestToken=eyJzdWIiOiI4ZmYyZGExYS1lM2VjLTQ3NDMtOTkyYS05ZThlMjBmMTVlNWEiLCJ2ZXIiOiIyOGU3ZTFlMS1hNGFlLTQ1OGItODNhOS03YTU2N2NiYzFhMTkiLCJleHAiOjB9){.external target="_blank"}
+| <br> <!-- This will add a blank line -->
+:::::::
+| US 7,782,951
+| Issued Aug 24, 2010
+:::::
+
+::::: {.card .card-body}
+::::::: {.card-title .h5}
+| [Model based bit rate control for a macroblock encoder](https://ppubs.uspto.gov/dirsearch-public/print/downloadBasicPdf/7720145?requestToken=eyJzdWIiOiI4ZmYyZGExYS1lM2VjLTQ3NDMtOTkyYS05ZThlMjBmMTVlNWEiLCJ2ZXIiOiIyOGU3ZTFlMS1hNGFlLTQ1OGItODNhOS03YTU2N2NiYzFhMTkiLCJleHAiOjB9){.external target="_blank"}
+| <br> <!-- This will add a blank line -->
+:::::::
+| US 7,720,145 
+| Issued May 18, 2010
+:::::
+
+::::: {.card .card-body}
+::::::: {.card-title .h5}
+| [System, method, and apparatus for error recovery in coded video signals](https://ppubs.uspto.gov/dirsearch-public/print/downloadBasicPdf/7627042?requestToken=eyJzdWIiOiI4ZmYyZGExYS1lM2VjLTQ3NDMtOTkyYS05ZThlMjBmMTVlNWEiLCJ2ZXIiOiIyOGU3ZTFlMS1hNGFlLTQ1OGItODNhOS03YTU2N2NiYzFhMTkiLCJleHAiOjB9){.external target="_blank"}
+:::::::
+| US 7,627,042
+| Issued Dec 1, 2009
+:::::
+
+::::: {.card .card-body}
+::::::: {.card-title .h5}
+| [System, method, and apparatus for error concealment in coded video signals](https://ppubs.uspto.gov/dirsearch-public/print/downloadBasicPdf/7606313?requestToken=eyJzdWIiOiI4ZmYyZGExYS1lM2VjLTQ3NDMtOTkyYS05ZThlMjBmMTVlNWEiLCJ2ZXIiOiIyOGU3ZTFlMS1hNGFlLTQ1OGItODNhOS03YTU2N2NiYzFhMTkiLCJleHAiOjB9){.external target="_blank"}
+:::::::
+| US 7,606,313
+| Issued Oct 20, 2009
+:::::
+:::
+
+## Publications & Conferences
+
+::: {layout-ncol="2"}
+::::: {.card .card-body}
+::::::: {.card-title .h5}
+| Multi Channel Surveillance Grade MPEG-4/H.264 Video Encoder on High End TI Davinci Processors
+:::::::
+| TI Developers Conference, California
+| 01-Jan-2007
+:::::
+
+::::: {.card .card-body}
+::::::: {.card-title .h5}
+| [Scalable Multi processor MPEG-2 to H.264 transcoder architecture](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.ti.com/lit/pdf/sprp595&ved=2ahUKEwiezKLCsf6IAxWADjQIHRyEPegQFnoECBMQAQ&usg=AOvVaw1q0Ofaw4IERgZ0ClCKx8pI){.external target="_blank"}
+:::::::
+| GSPx Conference
+| 01-Jan-2006
+:::::
+
+::::: {.card .card-body}
+::::::: {.card-title .h5}
+| [MPEG-2 to H.264 Transcoder on Texas Instruments TMS320DM642](https://ieeexplore.ieee.org/document/4620174){.external target="_blank"}
+:::::::
+| IEEE, ICME
+| 30-Jun-2004
+:::::
+:::
+
+## Education
+
+::: {layout-ncol="2"}
+::::: {.card .card-body}
+::::::::: {.card-text}
+![](/assets/profile/iimb.jpg "Title: Indian Institute Of Management, Bangalore"){fig-align="left" width=20%}
+:::::::::
+::::::: {.card-title .h5}
+| MBA, Post Graduation in Software Enterprise Management
+| Indian Institute of Management, Bangalore
+| (2011 - 2014)
+:::::::
+:::::
+
+::::: {.card .card-body}
+::::::::: {.card-text}
+![](/assets/profile/nitt.png "Title: "National Institute of Technology, Tiruchirappalli""){fig-align="left" width=20%}
+:::::::::
+::::::: {.card-title .h5}
+| BE, Electronics and Communication
+| National Institute of Technology, Tiruchirappalli
+| (1996 - 2000)
+:::::::
+:::::
+:::
