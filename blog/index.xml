@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Arvind&#39;s Portfolio</title>
+<link>https://ramanarvind.github.io/blog/</link>
+<atom:link href="https://ramanarvind.github.io/blog/index.xml" rel="self" type="application/rss+xml"/>
+<description>A mixed bag of technical blogs covering System Design, Cloud Computing, Kubernetes, Machine Learning, Ad Tech, CpaaS and Video Technology</description>
+<generator>quarto-1.4.552</generator>
+<lastBuildDate>Sat, 06 Apr 2024 18:30:00 GMT</lastBuildDate>
+<item>
+  <title>Programmatic Advertising Ecosystem</title>
+  <dc:creator>Arvind Raman</dc:creator>
+  <link>https://ramanarvind.github.io/blog/20240930/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>Programmatic Advertising automates the process of buying and selling digital advertising space using business rules and data. The ecosystem of software and systems in place to automate this process is called AdTech. In this article I intend to go over the the building blocks of the AdTech ecosystem.</p>
+</section>
+<section id="players" class="level1">
+<h1>Players</h1>
+<p>Before we go any further, lets briefly talk about the key players in the ecosystem - Advertisers and Publishers. ## Advertisers &amp; Advertising Agency Advertisers are people who want to put their brands, products and services in front of people. These are the guys interested in buying the Ad space. Advertisers work with Advertising Agencies to create compelling Ads to catch their target audience’s attention. ## Publishers Publishers on the other hand are people producing content and hence are the suppliers of the Ad space. Ad space could be made available on websites, digital billboards or VAST streaming services</p>
+<p>Before the advent of the Ad Tech platform, buying and selling of the Ad slots used to happen manually and 1-on-1. Once an advertiser and a publisher had a deal and Insertion Order (IO) would be created, allowing the advertisers Ad to be displayed on the publishers Ad space.</p>
+<p>However with the exponential growth of digital media (Websites, Digital billboards, Connected TVs, Apps running on mobile devices etc…), the number of publishers an advertiser had to negotiate with grew to an extent that it was no longer possible for him to individually negotiate with each one of them. A programmatic solution to trade Ad spaces and render Ads was required and thus the AdTech platform was born.</p>
+<p>An AdTech platform is run by 3rd party intermediary companies. They are neither advertisers nor publishers but tend to serve as a broker between them.</p>
+</section>
+<section id="adtech-platform" class="level1">
+<h1>AdTech Platform</h1>
+<p>The AdTech Platform has evolved over a period of time to what it is now. We will trace this evolution to get a better understanding of these different components and why they were introduced.</p>
+<section id="ad-network" class="level2">
+<h2 class="anchored" data-anchor-id="ad-network">Ad Network</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://ramanarvind.github.io/blog/20240930/AdTech-AdNetwork.jpg" class="img-fluid figure-img"></p>
+<figcaption>Programmatic Advertising Ad Networks</figcaption>
+</figure>
+</div>
+<p>As a first step, an Ad Network was introduced to serve as a broker between a group of advertisers and publishers. Ad Networks, were introduced to help publishers sell their inventory and for advertisers to scale their digital Ad campaigns across many sites without having to deal with each publisher directly. Ad Networks aggregate unsold inventory from several publishers and offers this to the advertisers on a CPM (Cost Per Million) basis.</p>
+<p>Besides reducing the friction inherent in an advertiser - publisher transaction, an Ad network also enhanced the trust in the system. A trursted Ad network like Google, could server as a guarantor for the quality of a publisher’s Ad space inventory while at the same time safeguarding the advertiser’s interest by reducing Ad fraud. As an example, an Ad network ensured that an advertiser was charged only when their Ads were shown on the publishers property.</p>
+<p>The success of the Ad Network model, attracted many players (like Google, Facebook, Yahoo, Seismic etc…) each introducing their own Ad Network. An Ad Network (like Google Display Network or GDN) is a collection of publishers who chose to partner with that particular Ad Network, allowing it to display Ads on their property.</p>
+<p>As the number of Ad Networks grew, the original problem faced by the advertisers returned. Instead of dealing with multiple publishers, they now had to deal with multiple Ad Networks. An Ad Exhchange was introduced next to solve this problem.</p>
+</section>
+<section id="ad-exchange" class="level2">
+<h2 class="anchored" data-anchor-id="ad-exchange">Ad Exchange</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://ramanarvind.github.io/blog/20240930/AdTech-AdExchange.jpg" class="img-fluid figure-img"></p>
+<figcaption>Programmatic Advertising Ad Exchange</figcaption>
+</figure>
+</div>
+<p>The Ad Exchange did to the Ad Networks, what the Ad Network did to the publishers. The Ad Exchange clubbed multiple Ad Networks together and allowed the advertisers to run their campaign across all publishers attached to all Ad Networks attached to the Ad Echange. Further they also allowed marquee publishers to directly sell their Ad space inventory on the exchange, bypassing the Ad Network. These publishers connect to the Ad exchange via an Ad Tech ecosystem component called the Supply Side Platform (SSP).</p>
+<p>Similarly, on the demand side, the advertisers connect to the Ad exchange via yet another AdTech ecosystem component called the Demand Side Platform (DSP). The DSPs interoperate across multiple Ad exchanges and solves the advertisers problem of dealing with multiple parties. An advertiser therefore selects a DSP based on the flexibility and controls it offers to run an Ad campaign.</p>
+</section>
+<section id="supply-side-platform-ssp" class="level2">
+<h2 class="anchored" data-anchor-id="supply-side-platform-ssp">Supply Side Platform (SSP)</h2>
+<p>A Supply Side Platform (SSP) allows publishers to sell their inventory of Ad slots on multiple Ad Exchanges and Ad Networks and in some cases directly to the DSPs.</p>
+</section>
+<section id="demand-side-platform-dsp" class="level2">
+<h2 class="anchored" data-anchor-id="demand-side-platform-dsp">Demand Side Platform (DSP)</h2>
+<p>A Demand Side Platform (DSP) allows advertisers to buy Ad space by connecting to Ad Exchanges, where the available Ad spaces are traded. DSP is a key component of the real-time bidding process, which allows advertisers to buy Ad space on an impression by impression basis. To help improve targeting, DSPs often use data from Data Management Platform (DMP). DSPs can also buy Ad space by directly connecting to a SSP</p>
+<p>At this stage the, the phrase programmatic advertising started becoming mainstream. The entire process of buying and selling Ad space was automated. The AdTech ecosystem however continued to evolve to improve the efficacy of the Ad campaign.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://ramanarvind.github.io/blog/20240930/AdTech.jpg" class="img-fluid figure-img"></p>
+<figcaption>Programmatic Advertising</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="data-managament-platform-dmp" class="level1">
+<h1>Data Managament Platform (DMP)</h1>
+<p>DMPs were introcued to collect user information (like cookie and device IDs) to help advertisers reach their target audience with greater accuracy. Advertisers configure the DSPs to connect with the DMPs to use the auxillary information as an input to decide which Ad slots to buy.</p>
+</section>
+<section id="third-party-ad-server" class="level1">
+<h1>Third Party Ad Server</h1>
+<p>Most advertisers would use an Ad server. It is often called the Third Party Ad Server and provides the following functionalities * Decides which Ads to show. * Serves these Ads when requested * Connects with Demand Side Platform (DSP) to buy the Ad space inventory * Collects metrics around impressions to report back to the advertiser</p>
+</section>
+<section id="first-party-ad-server" class="level1">
+<h1>First Party Ad Server</h1>
+<p>The publishers also have an Ad server. In this case it is called a First Party Ad Server and provides the following functionalities * Manages the inventory of available Ad slots * Displays Ads that are being sold directly to advertisers via direct campaigns * In the absence of a direcy campaign, it decides which Ad codes to choose and serve them the Ad slots</p>
+
+
+</section>
+
+ ]]></description>
+  <category>AdTech</category>
+  <guid>https://ramanarvind.github.io/blog/20240930/</guid>
+  <pubDate>Sat, 06 Apr 2024 18:30:00 GMT</pubDate>
+  <media:content url="https://ramanarvind.github.io/blog/20240930/AdtechBlogImage.jpg" medium="image" type="image/jpeg"/>
+</item>
+</channel>
+</rss>
